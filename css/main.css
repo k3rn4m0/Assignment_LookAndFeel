@@ -1,47 +1,204 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
 html {
-  height: 100%;
+  background-color: rgb(28, 73, 28);
+  font-family: sans-serif, monospace;
+  color:white;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
-/* Position text in the middle */
-.middle {
+body > header {
+  /*  margin: 0 -601.5rem;
+  padding: 0.25rem 1.5rem;
+  padding-bottom: 90px;
+  background: black;
+  border-left: 600rem solid;
+  border-right: 600rem solid;*/
   position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  opacity: 95%;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+.site-heading{
+  position: center;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  /*border: limegreen;
+  border-style: solid;*/
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+
+.header-content{
+  float: right;
+  color: white;
+  /*border: limegreen;
+  border-style: solid;*/
 }
 
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+nav > ul {
+  float: right;
+  list-style: none;
 }
 
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
+ul > li{
+  display: inline-block;
+  padding: 5px 25px 5px 25px;
+  margin-right: 10px;
+  color: white;
+  font-family: font-family: sans-serif, monospace;
+  color:white;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+  outline: 0;
+}
+li a:hover{
+  color: limegreen;
   text-decoration: none;
 }
+
+.site-logo > img{
+  padding: 15px 5px 15px 5px;
+  float: left;
+  width: 70px;
+  height: 70px;
+  /*border: limegreen;
+  border-style: solid;*/
+}
+
+.main-content{
+  flex: auto;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  height: 100%;
+}
+
+
+body > footer {
+  position: fixed;
+  padding: 1px 1px 1px 1px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  background-color: black;
+  height: 30px
+}
+
+footer:hover{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+
+}
+
+.footer-content{
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  margin-left: 500px
+}
+
+.profile-bubble {
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 100px;
+  float: center;
+}
+
+.profile-adjust{
+  float: center;
+  margin: 100px;
+  margin-top: 10px;
+}
+
+.profile-github{
+  height: 40px;
+  width: 40px;
+  margin-left: 55px;
+  outline: 0;
+}
+
+.profile-linkedin{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  outline: 0;
+}
+
+.data-model{
+  padding-left: 200px;
+  padding-bottom: 50px;
+}
+
+
+.data-model-heading{
+  margin:100px;
+}
+
+.data-model:hover{
+  color: #424242; 
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+-ms-transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+transition: all .3s ease-in;
+opacity: 100%;
+transform: scale(5);
+-ms-transform: scale(5); /* IE 9 */
+-webkit-transform: scale(5); /* Safari and Chrome */
+
+} /* reference: https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it  */
+
+.bidding {
+  max-width: 99%;
+}
+
+.submit-1 {
+  margin-left: 50%;
+  background-color: goldenrod;
+  border-radius: 35px;
+  font-size: 20px;
+}
+
+/* References: https://learn.shayhowe.com/html-css/organizing-data-with-tables/ */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: white;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+th,
+td {
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+thead {
+  background: #395870;
+  color: #fff;
+}
+th {
+  font-weight: bold;
+}
+th:first-child {
+  text-align: left;
+}
+tbody tr:nth-child(even) {
+  background: rgb(110, 106, 106);
+}
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>SEARCH</title>
+</head>
+<body>
+    <header>
+        <div class="site-logo">
+            <img alt="USF" src="img/site-logo.png">
+        </div>
+            <div class="site-heading">
+                <h1>SEARCH</h1>
+            </div>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="home.html"><h4>HOME</h4></a></li>
+                        <li><a href="search.html"><h4>SEARCH LISTINGS</h4></a></li>
+                        <li><a href="info.html"><h4>INFO</h4></a></li>
+                        <li><a href="about.html"><h4>ABOUT<h4></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="main-content">
+        <h3>1. Search Auction listings by Item id, Sale No, Lot No., City, State &/or Zip</h3>
+        <form class="search-bar-1">
+            <ul>
+                <li>
+                    <input class="search-by-itemid" type="text" name="Item_Id" placeholder="Item Id">
+                </li>
+                <li>
+                    <input class="search-by-SaleNo" type="text" name="SaleNo" placeholder="Sale No.">
+                </li>
+                <li>
+                    <input class="search-by-LotNo" type="text" name="LotNo" placeholder="Lot No.">
+                </li>
+                <li>
+                    <select class="search-by-state" name="ST">
+                        <option value="ST">State</option>
+                        <option value="ST">CA</option>
+                        <option value="ST">AK</option>
+                        <option value="ST">NZ</option>
+                        <option value="ST">TX</option>
+                        <option value="ST">NV</option>
+                    </select>
+                </li>
+                <li>
+                    <input class="search-by-itemid" type="text" name="Zip" placeholder="Zip">
+                </li>
+    
+            </ul>
+            <li><input class="submit-1" type="submit" value="Search Listings"></li>
+        </form>
+        <table class="auction-listing">
+            <thead>
+            <tr>
+                <th scope="col">Item Id</th>
+                <th scope="col">Sale No.</th>
+                <th scope="col">Lot No.</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Prop Addr 1</th>
+                <th scope="col">Prop Addr 2</th>
+                <th scope="col">Prop Addr 3</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Zip</th>
+                <th scope="col">Reserve</th>
+                <th scope="col">ImageURL</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>41QSCI20075</td>
+                    <td>901</td>
+                    <td>BOXING GLOVES AND SPEED BAGS</td>
+                    <td>Va  Medical Center</td>
+                    <td>Chief  A and Mm Service  90b</td>
+                    <td>5901 E Seventh Street  Building 149</td>
+                    <td>Beeville</td>
+                    <td>CA</td>
+                    <td>995020000</td>
+                    <td>true</td>
+                    <td>https://gsaauctions.gov/lotimages/regn9/91QSCI20191803.jpg</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>91QSCI20184</td>
+                    <td>902</td>
+                    <td>MOTOROLA TWO WAY RADIOS</td>
+                    <td>Dept Of Interior  National Park Svc</td>
+                    <td>Mile 237 George Parks Highway</td>
+                    <td>Denali Park</td>
+                    <td>Phoenix</td>
+                    <td>AZ</td>
+                    <td>974710000</td>
+                    <td>true</td>
+                    <td>https://gsaauctions.gov/lotimages/regn9/91QSCI20184937.jpg</td>
+                </tr>
+                <tr>
+                    <td>789</td>
+                    <td>91QSCI20132</td>
+                    <td>903</td>
+                    <td>RUHOF ATP COMPLETE CONTANIMATION MONITORING SYSTEM</td>
+                    <td>Alaska SASP</td>
+                    <td>Federal Property Center</td>
+                    <td>2400 Viking Drive.</td>
+                    <td>Fort Hood</td>
+                    <td>NV</td>
+                    <td>997550000</td>
+                    <td>false</td>
+                    <td>https://gsaauctions.gov/lotimages/regn9/91QSCI20131042.jpg</td>
+                </tr>
+            </tbody>
+        </table>      
+        <h3>2. Search Bidding Info based on Item id, Lot No. & Bid Amount</h3>
+        <form class="search-bar-1">
+            <ul>
+                <li>
+                    <input class="search-by-itemid" type="text" name="Item_Id" placeholder="Item Id">
+                </li>
+                <li>
+                    <input class="search-by-LotNo" type="text" name="LotNo" placeholder="Lot No.">
+                </li>
+                <li>
+                    <select class="search-by-bidamt-from" name="Bid">
+                        <option value="bid-amt">Bid amount from</option>
+                        <option value="bid-amt">0</option>
+                        <option value="bid-amt">10</option>
+                        <option value="bid-amt">100</option>
+                        <option value="bid-amt">1000</option>
+                        <option value="bid-amt">10000</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="search-by-bidamt-to" name="Bid">
+                        <option value="bid-amt">Bid amount to</option>
+                        <option value="bid-amt">10</option>
+                        <option value="bid-amt">100</option>
+                        <option value="bid-amt">1000</option>
+                        <option value="bid-amt">10000</option>
+                        <option value="bid-amt">100000</option>
+                    </select>
+                </li>
+            </ul>
+            <li><input class="submit-1" type="submit" value="Search Listings"></li>
+        </form>
+        <table class="auction-listing">
+            <thead>
+            <tr>
+                <th scope="col">Sale No</th>
+                <th scope="col">Lot No</th>
+                <th scope="col">Item Id</th>
+                <th scope="col">High Bid Amount</th>
+                <th scope="col">Reserve</th>
+                <th scope="col">Bidders Count</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>91QSCI20191</td>
+                    <td>918</td>
+                    <td>123</td>
+                    <td>0.00</td>
+                    <td>true</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>91QSCI20131</td>
+                    <td>919</td>
+                    <td>456</td>
+                    <td>201.00</td>
+                    <td>true</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>9XQSCI2072K</td>
+                    <td>920</td>
+                    <td>789</td>
+                    <td>10.00</td>
+                    <td>false</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>71QSCI20720</td>
+                    <td>939</td>
+                    <td>101112</td>
+                    <td>2000.00</td>
+                    <td>false</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>71QSCI20344</td>
+                    <td>940</td>
+                    <td>131415</td>
+                    <td>50.00</td>
+                    <td>true</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>71QSCI20338</td>
+                    <td>806</td>
+                    <td>161718</td>
+                    <td>410.00</td>
+                    <td>true</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>        
+        <h3>3. Search Seller Info based on SaleNo, LotNo, Item Id.</h3>
+        <form class="search-bar-1">
+            <ul>
+                <li>
+                    <input class="search-by-itemid" type="text" name="Item_Id" placeholder="Item Id">
+                </li>
+                <li>
+                    <input class="search-by-SaleNo" type="text" name="SaleNo" placeholder="Sale No.">
+                </li>
+                <li>
+                    <input class="search-by-LotNo" type="text" name="LotNo" placeholder="Lot No.">
+                </li>
+            </ul>
+            <li><input class="submit-1" type="submit" value="Search Listings"></li>
+        </form>
+    <table class="auction-listing">
+        <thead>
+        <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Sale No.</th>
+            <th scope="col">Lot No.</th>
+            <th scope="col">Sale Location</th>
+            <th scope="col">Location Org</th>
+            <th scope="col">Location Street</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>91QSCI20191</td>
+                <td>801</td>
+                <td>GSA, FAS, PPM (9QSCC)</td>
+                <td>Sales Office, 2nd Floor E 2570</td>
+                <td>CA</td>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>941024912</td>
+            </tr>
+            <tr>
+                <td>456</td>
+                <td>91QSCI20184</td>
+                <td>938</td>
+                <td>GSA, FAS, PPM (9QSCC)</td>
+                <td>SALES OFFICE</td>
+                <td>TX</td>
+                <td>Fort Worth</td>
+                <td>TX</td>
+                <td>000076102</td>
+            </tr>
+            <tr>
+                <td>789</td>
+                <td>91QSCI20132</td>
+                <td>939</td>
+                <td>GSA, FAS, 4QSCC</td>
+                <td>819 Taylor Street, Room 13A05</td>
+                <td>GA</td>
+                <td>ATLANTA</td>
+                <td>GA</td>
+                <td>303030000</td>
+            </tr>
+            <tr>
+                <td>101112</td>
+                <td>91QSCI20131</td>
+                <td>940</td>
+                <td>GSA, FAS, WQSCC</td>
+                <td>Sales Office, 2nd Floor E 2570</td>
+                <td>VA</td>
+                <td>SPRINGFIELD</td>
+                <td>VA</td>
+                <td>221500000</td>
+            </tr>
+        </tbody>
+    </table>  
+    </div>
+    <footer>
+            <div class="footer-content">
+                <small>&copy; 2020 University of South Florida<small></small>
+            </div>
+    </footer>
+</body>
+</html>
